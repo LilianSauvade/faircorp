@@ -128,11 +128,4 @@ public class RoomControllerTest {
         building.setId(999L);
         return new Room(name, 1, building);
     }
-
-    private Heater createHeater(String name) {
-        Room room = new Room("S1", 1, new Building("Test", "address", "SE", "42100"));
-        room.setId(999L);
-        return new Heater(name, HeaterStatus.ON, room);
-    }
-
 }
