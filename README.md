@@ -9,6 +9,7 @@ http://lilian-sauvade.cleverapps.io/
 II - How to use the project :
 
 You just need to go to this link :
+
 http://lilian-sauvade.cleverapps.io/swagger-ui/
 
 You can create buildings, rooms, windows and heaters.
