@@ -38,12 +38,6 @@ public class RoomController {
         return roomDao.findById(id).map(RoomDto::new).orElse(null);
     }
 
-    @GetMapping(path = "/{id}/windows")
-    public Set<WindowDto> ok(@PathVariable Long id) {
-
-        return roomDao.findById(id).map(RoomDto::new).orElse(null).getWindows();
-    }
-
     @PutMapping(path = "/{room_id}/switchWindows")
     public ArrayList<WindowDto> switchWindows(@PathVariable(name="room_id") Long room_id) {
         Room room = roomDao.findById(room_id).orElseThrow(IllegalArgumentException::new);
